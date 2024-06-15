@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_280d448b060955bd85f49ca0b405f02a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_280d448b060955bd85f49ca0b405f02a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_280d448b060955bd85f49ca0b405f02a = L.map(
+                "map_280d448b060955bd85f49ca0b405f02a",
+                {
+                    center: [45.0355, 38.9753],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8f146b122264cba8e53e8ec2a67832ce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8f146b122264cba8e53e8ec2a67832ce.addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+            var marker_41780bb12d73e720612f75c2ba5afd00 = L.marker(
+                [45.0, 40.0],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_596a3cce07ddb1a0ccf14424c97af151 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91c1971306fd6163d2372c562d35d50f = $(`<div id="html_91c1971306fd6163d2372c562d35d50f" style="width: 100.0%; height: 100.0%;">Krasnodar: 19.54°C</div>`)[0];
+                popup_596a3cce07ddb1a0ccf14424c97af151.setContent(html_91c1971306fd6163d2372c562d35d50f);
+            
+        
+
+        marker_41780bb12d73e720612f75c2ba5afd00.bindPopup(popup_596a3cce07ddb1a0ccf14424c97af151)
+        ;
+
+        
+    
+    
+            marker_41780bb12d73e720612f75c2ba5afd00.bindTooltip(
+                `<div>
+                     Krasnodar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6c50991d06c6f122b6e96c2f6fb9eb2 = L.marker(
+                [45.0072, 38.9819],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_ba9a99227bc3af386a100d39e9877dbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f83f65cadff0b9b97980f5d1760eb8b8 = $(`<div id="html_f83f65cadff0b9b97980f5d1760eb8b8" style="width: 100.0%; height: 100.0%;">Novyy: 23.39°C</div>`)[0];
+                popup_ba9a99227bc3af386a100d39e9877dbc.setContent(html_f83f65cadff0b9b97980f5d1760eb8b8);
+            
+        
+
+        marker_b6c50991d06c6f122b6e96c2f6fb9eb2.bindPopup(popup_ba9a99227bc3af386a100d39e9877dbc)
+        ;
+
+        
+    
+    
+            marker_b6c50991d06c6f122b6e96c2f6fb9eb2.bindTooltip(
+                `<div>
+                     Novyy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d452a68456d1c69cf90836ae3fc5a3db = L.marker(
+                [45.02, 38.9378],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_d7a9a58863b38e771c7277eacc9fd8fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81f33fff2103327731cc5d66aff1d5eb = $(`<div id="html_81f33fff2103327731cc5d66aff1d5eb" style="width: 100.0%; height: 100.0%;">Novaya Adygeya: 23.39°C</div>`)[0];
+                popup_d7a9a58863b38e771c7277eacc9fd8fb.setContent(html_81f33fff2103327731cc5d66aff1d5eb);
+            
+        
+
+        marker_d452a68456d1c69cf90836ae3fc5a3db.bindPopup(popup_d7a9a58863b38e771c7277eacc9fd8fb)
+        ;
+
+        
+    
+    
+            marker_d452a68456d1c69cf90836ae3fc5a3db.bindTooltip(
+                `<div>
+                     Novaya Adygeya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_caff5b902b647ddff47e4a0a8b83e1bf = L.marker(
+                [59.4511, 112.5578],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_81178f14175f1cbfb4e17ec6aef02b3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcf3180af328e8fbe5389077e7fe5ac2 = $(`<div id="html_bcf3180af328e8fbe5389077e7fe5ac2" style="width: 100.0%; height: 100.0%;">Vitim: 7.94°C</div>`)[0];
+                popup_81178f14175f1cbfb4e17ec6aef02b3d.setContent(html_bcf3180af328e8fbe5389077e7fe5ac2);
+            
+        
+
+        marker_caff5b902b647ddff47e4a0a8b83e1bf.bindPopup(popup_81178f14175f1cbfb4e17ec6aef02b3d)
+        ;
+
+        
+    
+    
+            marker_caff5b902b647ddff47e4a0a8b83e1bf.bindTooltip(
+                `<div>
+                     Vitim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2266c97c0bc8ceae915b05d8656fafe5 = L.marker(
+                [44.989, 38.9432],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_d01cd5d3e7d11d92c17fed737fb639ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f0b9ad952c76465df69ffcb5c23964e = $(`<div id="html_7f0b9ad952c76465df69ffcb5c23964e" style="width: 100.0%; height: 100.0%;">Yablonovsky: 23.39°C</div>`)[0];
+                popup_d01cd5d3e7d11d92c17fed737fb639ce.setContent(html_7f0b9ad952c76465df69ffcb5c23964e);
+            
+        
+
+        marker_2266c97c0bc8ceae915b05d8656fafe5.bindPopup(popup_d01cd5d3e7d11d92c17fed737fb639ce)
+        ;
+
+        
+    
+    
+            marker_2266c97c0bc8ceae915b05d8656fafe5.bindTooltip(
+                `<div>
+                     Yablonovsky
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9b17c61c0f5a7e3b8952235428af47b = L.marker(
+                [59.6167, 42.25],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_cc1167772e6461532ab0138d601cd654 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fadf9f28014f11f5a65e7d5a1fd60a6e = $(`<div id="html_fadf9f28014f11f5a65e7d5a1fd60a6e" style="width: 100.0%; height: 100.0%;">Kalinino: 16.83°C</div>`)[0];
+                popup_cc1167772e6461532ab0138d601cd654.setContent(html_fadf9f28014f11f5a65e7d5a1fd60a6e);
+            
+        
+
+        marker_a9b17c61c0f5a7e3b8952235428af47b.bindPopup(popup_cc1167772e6461532ab0138d601cd654)
+        ;
+
+        
+    
+    
+            marker_a9b17c61c0f5a7e3b8952235428af47b.bindTooltip(
+                `<div>
+                     Kalinino
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bd5d08b90dd6c1c3ff6c02bcf757495 = L.marker(
+                [45.1144, 39.0386],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_90bd5de304cde2ecc072f467a347577d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9f1a54295f4fc4d0e25384eb86bc2e6 = $(`<div id="html_d9f1a54295f4fc4d0e25384eb86bc2e6" style="width: 100.0%; height: 100.0%;">Rossiyskiy: 23.29°C</div>`)[0];
+                popup_90bd5de304cde2ecc072f467a347577d.setContent(html_d9f1a54295f4fc4d0e25384eb86bc2e6);
+            
+        
+
+        marker_1bd5d08b90dd6c1c3ff6c02bcf757495.bindPopup(popup_90bd5de304cde2ecc072f467a347577d)
+        ;
+
+        
+    
+    
+            marker_1bd5d08b90dd6c1c3ff6c02bcf757495.bindTooltip(
+                `<div>
+                     Rossiyskiy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_708f595cacbf2db7adeaef1eea32d889 = L.marker(
+                [45.0231, 39.1061],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_619dd3d079993d688b12b12d4c35a551 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1bea74dbc68037a6a7aa7d12d9ae265 = $(`<div id="html_c1bea74dbc68037a6a7aa7d12d9ae265" style="width: 100.0%; height: 100.0%;">Pashkovskiy: 24°C</div>`)[0];
+                popup_619dd3d079993d688b12b12d4c35a551.setContent(html_c1bea74dbc68037a6a7aa7d12d9ae265);
+            
+        
+
+        marker_708f595cacbf2db7adeaef1eea32d889.bindPopup(popup_619dd3d079993d688b12b12d4c35a551)
+        ;
+
+        
+    
+    
+            marker_708f595cacbf2db7adeaef1eea32d889.bindTooltip(
+                `<div>
+                     Pashkovskiy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2965445940b24edb25b401739214ef14 = L.marker(
+                [44.98, 39.0972],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_e4b600156551c0c6c46dd9d9f5b83bf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a86a385f6c6cc4f3661431cfa41308cf = $(`<div id="html_a86a385f6c6cc4f3661431cfa41308cf" style="width: 100.0%; height: 100.0%;">Tlyustenkhabl': 24.08°C</div>`)[0];
+                popup_e4b600156551c0c6c46dd9d9f5b83bf5.setContent(html_a86a385f6c6cc4f3661431cfa41308cf);
+            
+        
+
+        marker_2965445940b24edb25b401739214ef14.bindPopup(popup_e4b600156551c0c6c46dd9d9f5b83bf5)
+        ;
+
+        
+    
+    
+            marker_2965445940b24edb25b401739214ef14.bindTooltip(
+                `<div>
+                     Tlyustenkhabl'
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c267eac100305d31d51d829aabf40770 = L.marker(
+                [44.9215, 38.9958],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_5d7f6a481e0c02208da431f542fddbe2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b031b00340b8b5738dc9c8c1406f72bf = $(`<div id="html_b031b00340b8b5738dc9c8c1406f72bf" style="width: 100.0%; height: 100.0%;">Takhtamukay: 23.28°C</div>`)[0];
+                popup_5d7f6a481e0c02208da431f542fddbe2.setContent(html_b031b00340b8b5738dc9c8c1406f72bf);
+            
+        
+
+        marker_c267eac100305d31d51d829aabf40770.bindPopup(popup_5d7f6a481e0c02208da431f542fddbe2)
+        ;
+
+        
+    
+    
+            marker_c267eac100305d31d51d829aabf40770.bindTooltip(
+                `<div>
+                     Takhtamukay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce861d6fbf3d0cc22ce77ae3b2ba7379 = L.marker(
+                [45.0872, 39.1211],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_0279fbfadf48962736a6d815798d7487 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58292ddff11a0e0aee14d4e9fc845b9b = $(`<div id="html_58292ddff11a0e0aee14d4e9fc845b9b" style="width: 100.0%; height: 100.0%;">Zonal’nyy: 23.97°C</div>`)[0];
+                popup_0279fbfadf48962736a6d815798d7487.setContent(html_58292ddff11a0e0aee14d4e9fc845b9b);
+            
+        
+
+        marker_ce861d6fbf3d0cc22ce77ae3b2ba7379.bindPopup(popup_0279fbfadf48962736a6d815798d7487)
+        ;
+
+        
+    
+    
+            marker_ce861d6fbf3d0cc22ce77ae3b2ba7379.bindTooltip(
+                `<div>
+                     Zonal’nyy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31443bb1d340104573770b1e819a988e = L.marker(
+                [53.2542, 83.6936],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_493e6b482fc44fe0edb812d12cf48cf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e14282d9a156b3305754f47e73dff51 = $(`<div id="html_7e14282d9a156b3305754f47e73dff51" style="width: 100.0%; height: 100.0%;">Yuzhnyy: 23.21°C</div>`)[0];
+                popup_493e6b482fc44fe0edb812d12cf48cf2.setContent(html_7e14282d9a156b3305754f47e73dff51);
+            
+        
+
+        marker_31443bb1d340104573770b1e819a988e.bindPopup(popup_493e6b482fc44fe0edb812d12cf48cf2)
+        ;
+
+        
+    
+    
+            marker_31443bb1d340104573770b1e819a988e.bindTooltip(
+                `<div>
+                     Yuzhnyy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d47d51235b259c7bd2ef175b3b57878d = L.marker(
+                [44.9271, 38.9085],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_4c8e3db89bbaa74c7759bff27708085a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc3bcf499ebbdbd442a809c7b8f235bd = $(`<div id="html_fc3bcf499ebbdbd442a809c7b8f235bd" style="width: 100.0%; height: 100.0%;">Enem: 23.34°C</div>`)[0];
+                popup_4c8e3db89bbaa74c7759bff27708085a.setContent(html_fc3bcf499ebbdbd442a809c7b8f235bd);
+            
+        
+
+        marker_d47d51235b259c7bd2ef175b3b57878d.bindPopup(popup_4c8e3db89bbaa74c7759bff27708085a)
+        ;
+
+        
+    
+    
+            marker_d47d51235b259c7bd2ef175b3b57878d.bindTooltip(
+                `<div>
+                     Enem
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f22a97055210c269a6dcb268b554f8c = L.marker(
+                [45.1236, 39.1003],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_0a69307ab00ee9724dc39f3733dddae1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f5c069fcd66307b59b65c65e4432e14 = $(`<div id="html_3f5c069fcd66307b59b65c65e4432e14" style="width: 100.0%; height: 100.0%;">Pobeditel’: 23.97°C</div>`)[0];
+                popup_0a69307ab00ee9724dc39f3733dddae1.setContent(html_3f5c069fcd66307b59b65c65e4432e14);
+            
+        
+
+        marker_6f22a97055210c269a6dcb268b554f8c.bindPopup(popup_0a69307ab00ee9724dc39f3733dddae1)
+        ;
+
+        
+    
+    
+            marker_6f22a97055210c269a6dcb268b554f8c.bindTooltip(
+                `<div>
+                     Pobeditel’
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e1b49942ca9edf642cdc9788ea85cee = L.marker(
+                [45.0556, 39.1497],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_559d6ac3acc707f58da4c0d81f7a29c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c135a7451c6b02008f365ed01bfdcf6 = $(`<div id="html_9c135a7451c6b02008f365ed01bfdcf6" style="width: 100.0%; height: 100.0%;">Znamenskiy: 23.96°C</div>`)[0];
+                popup_559d6ac3acc707f58da4c0d81f7a29c1.setContent(html_9c135a7451c6b02008f365ed01bfdcf6);
+            
+        
+
+        marker_9e1b49942ca9edf642cdc9788ea85cee.bindPopup(popup_559d6ac3acc707f58da4c0d81f7a29c1)
+        ;
+
+        
+    
+    
+            marker_9e1b49942ca9edf642cdc9788ea85cee.bindTooltip(
+                `<div>
+                     Znamenskiy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb84c3c05fcf1213db828babcda5bb92 = L.marker(
+                [45.0445, 38.7958],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_6b50a3d6de3b3418280b3c0d0f0fbc0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c426c922285ab4d644c73c0bf98af3a4 = $(`<div id="html_c426c922285ab4d644c73c0bf98af3a4" style="width: 100.0%; height: 100.0%;">Yelizavetinskaya: 23.38°C</div>`)[0];
+                popup_6b50a3d6de3b3418280b3c0d0f0fbc0a.setContent(html_c426c922285ab4d644c73c0bf98af3a4);
+            
+        
+
+        marker_fb84c3c05fcf1213db828babcda5bb92.bindPopup(popup_6b50a3d6de3b3418280b3c0d0f0fbc0a)
+        ;
+
+        
+    
+    
+            marker_fb84c3c05fcf1213db828babcda5bb92.bindTooltip(
+                `<div>
+                     Yelizavetinskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f9482d3037041f1bc5df6a9b1bd55d4 = L.marker(
+                [44.9508, 39.1161],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_3721829a822c7ede71d6312dacdaaf06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5913f36bc4ca1e493a82dca4a9ba14f9 = $(`<div id="html_5913f36bc4ca1e493a82dca4a9ba14f9" style="width: 100.0%; height: 100.0%;">Tugurgoy: 24.06°C</div>`)[0];
+                popup_3721829a822c7ede71d6312dacdaaf06.setContent(html_5913f36bc4ca1e493a82dca4a9ba14f9);
+            
+        
+
+        marker_3f9482d3037041f1bc5df6a9b1bd55d4.bindPopup(popup_3721829a822c7ede71d6312dacdaaf06)
+        ;
+
+        
+    
+    
+            marker_3f9482d3037041f1bc5df6a9b1bd55d4.bindTooltip(
+                `<div>
+                     Tugurgoy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e8e5fca3d3557e066ab665c8130b48d = L.marker(
+                [45.1444, 39.0894],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_9a682d07aedc8ee294686fd16b0fc65b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d868667336ce1a2ee24364d94830f7e = $(`<div id="html_8d868667336ce1a2ee24364d94830f7e" style="width: 100.0%; height: 100.0%;">Lazurnyy: 23.99°C</div>`)[0];
+                popup_9a682d07aedc8ee294686fd16b0fc65b.setContent(html_8d868667336ce1a2ee24364d94830f7e);
+            
+        
+
+        marker_3e8e5fca3d3557e066ab665c8130b48d.bindPopup(popup_9a682d07aedc8ee294686fd16b0fc65b)
+        ;
+
+        
+    
+    
+            marker_3e8e5fca3d3557e066ab665c8130b48d.bindTooltip(
+                `<div>
+                     Lazurnyy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6009f07f5d14cd80f925c034754b768a = L.marker(
+                [44.95, 39.1331],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_95a9fc17da52ba04eb9b55bfd5bbd1b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34310a89445a0d1c861b35bc3d62afa1 = $(`<div id="html_34310a89445a0d1c861b35bc3d62afa1" style="width: 100.0%; height: 100.0%;">Lakshukay: 24.04°C</div>`)[0];
+                popup_95a9fc17da52ba04eb9b55bfd5bbd1b1.setContent(html_34310a89445a0d1c861b35bc3d62afa1);
+            
+        
+
+        marker_6009f07f5d14cd80f925c034754b768a.bindPopup(popup_95a9fc17da52ba04eb9b55bfd5bbd1b1)
+        ;
+
+        
+    
+    
+            marker_6009f07f5d14cd80f925c034754b768a.bindTooltip(
+                `<div>
+                     Lakshukay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8689eb8eb45bb36310a77258547e0d51 = L.marker(
+                [44.9021, 38.8439],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_4a75ffe9b8bead67c0c264a5b251816b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b32e3b81c06ea5e683da301084cb7cb8 = $(`<div id="html_b32e3b81c06ea5e683da301084cb7cb8" style="width: 100.0%; height: 100.0%;">Afipskiy: 23.36°C</div>`)[0];
+                popup_4a75ffe9b8bead67c0c264a5b251816b.setContent(html_b32e3b81c06ea5e683da301084cb7cb8);
+            
+        
+
+        marker_8689eb8eb45bb36310a77258547e0d51.bindPopup(popup_4a75ffe9b8bead67c0c264a5b251816b)
+        ;
+
+        
+    
+    
+            marker_8689eb8eb45bb36310a77258547e0d51.bindTooltip(
+                `<div>
+                     Afipskiy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dd2bf57121a499ff3dcc2163fecac0d = L.marker(
+                [54.4815, 53.471],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_a1f53e7ff6430b01babdd2132f002b8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0eb98dd2cb46552b9d9cbcc79beefe2c = $(`<div id="html_0eb98dd2cb46552b9d9cbcc79beefe2c" style="width: 100.0%; height: 100.0%;">Oktyabr’skiy: 18.16°C</div>`)[0];
+                popup_a1f53e7ff6430b01babdd2132f002b8e.setContent(html_0eb98dd2cb46552b9d9cbcc79beefe2c);
+            
+        
+
+        marker_6dd2bf57121a499ff3dcc2163fecac0d.bindPopup(popup_a1f53e7ff6430b01babdd2132f002b8e)
+        ;
+
+        
+    
+    
+            marker_6dd2bf57121a499ff3dcc2163fecac0d.bindTooltip(
+                `<div>
+                     Oktyabr’skiy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33939d9234d44dd167047eb86a90a9c2 = L.marker(
+                [46.0667, 39.7833],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_3f00acbef277486dea2d7af71e1fb1dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d34d7d0dd360c8d6434c6cb483a46fb = $(`<div id="html_9d34d7d0dd360c8d6434c6cb483a46fb" style="width: 100.0%; height: 100.0%;">Lenina: 21.03°C</div>`)[0];
+                popup_3f00acbef277486dea2d7af71e1fb1dc.setContent(html_9d34d7d0dd360c8d6434c6cb483a46fb);
+            
+        
+
+        marker_33939d9234d44dd167047eb86a90a9c2.bindPopup(popup_3f00acbef277486dea2d7af71e1fb1dc)
+        ;
+
+        
+    
+    
+            marker_33939d9234d44dd167047eb86a90a9c2.bindTooltip(
+                `<div>
+                     Lenina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5122531e6e4af94fa031d8a436b7803c = L.marker(
+                [45.1387, 39.1939],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_c444b2db683b371803e7d0a5dd0d3ab8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28f26099bb0c81c5fd615b7324a5283c = $(`<div id="html_28f26099bb0c81c5fd615b7324a5283c" style="width: 100.0%; height: 100.0%;">Agronom: 23.94°C</div>`)[0];
+                popup_c444b2db683b371803e7d0a5dd0d3ab8.setContent(html_28f26099bb0c81c5fd615b7324a5283c);
+            
+        
+
+        marker_5122531e6e4af94fa031d8a436b7803c.bindPopup(popup_c444b2db683b371803e7d0a5dd0d3ab8)
+        ;
+
+        
+    
+    
+            marker_5122531e6e4af94fa031d8a436b7803c.bindTooltip(
+                `<div>
+                     Agronom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d6068a28a9b4f814b2437b883f9d5ed = L.marker(
+                [44.9033, 39.1742],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_e8e09e1e753c8be396f06150c7c3b2f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4d1e3a1001283bc7d4bdbaa48de7cdd = $(`<div id="html_d4d1e3a1001283bc7d4bdbaa48de7cdd" style="width: 100.0%; height: 100.0%;">Kazazov: 23.96°C</div>`)[0];
+                popup_e8e09e1e753c8be396f06150c7c3b2f7.setContent(html_d4d1e3a1001283bc7d4bdbaa48de7cdd);
+            
+        
+
+        marker_2d6068a28a9b4f814b2437b883f9d5ed.bindPopup(popup_e8e09e1e753c8be396f06150c7c3b2f7)
+        ;
+
+        
+    
+    
+            marker_2d6068a28a9b4f814b2437b883f9d5ed.bindTooltip(
+                `<div>
+                     Kazazov
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86c1b0960d905fa188bbe8f3b226a608 = L.marker(
+                [45.2356, 38.9792],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_409f8183a47e1ee2cf282dbb4c918df1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60892fe896328fb602e61cc3a4120f28 = $(`<div id="html_60892fe896328fb602e61cc3a4120f28" style="width: 100.0%; height: 100.0%;">Novotitarovskaya: 23.36°C</div>`)[0];
+                popup_409f8183a47e1ee2cf282dbb4c918df1.setContent(html_60892fe896328fb602e61cc3a4120f28);
+            
+        
+
+        marker_86c1b0960d905fa188bbe8f3b226a608.bindPopup(popup_409f8183a47e1ee2cf282dbb4c918df1)
+        ;
+
+        
+    
+    
+            marker_86c1b0960d905fa188bbe8f3b226a608.bindTooltip(
+                `<div>
+                     Novotitarovskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3102a466795d8a3f0789d25c8dde10b8 = L.marker(
+                [56.6, 36.6167],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_995899b584f22bf822b81713e73df552 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1480ddc2be34c1620fab992e2ba00911 = $(`<div id="html_1480ddc2be34c1620fab992e2ba00911" style="width: 100.0%; height: 100.0%;">Karla Marksa: 18.95°C</div>`)[0];
+                popup_995899b584f22bf822b81713e73df552.setContent(html_1480ddc2be34c1620fab992e2ba00911);
+            
+        
+
+        marker_3102a466795d8a3f0789d25c8dde10b8.bindPopup(popup_995899b584f22bf822b81713e73df552)
+        ;
+
+        
+    
+    
+            marker_3102a466795d8a3f0789d25c8dde10b8.bindTooltip(
+                `<div>
+                     Karla Marksa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd8c37b283ae7a3aad1596f621213c0f = L.marker(
+                [45.0643, 38.679],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_7d764285bcce8f6e915c84102fea890e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5014205d0f1a499279e3efa00563c76 = $(`<div id="html_e5014205d0f1a499279e3efa00563c76" style="width: 100.0%; height: 100.0%;">Belozërnyy: 23.42°C</div>`)[0];
+                popup_7d764285bcce8f6e915c84102fea890e.setContent(html_e5014205d0f1a499279e3efa00563c76);
+            
+        
+
+        marker_dd8c37b283ae7a3aad1596f621213c0f.bindPopup(popup_7d764285bcce8f6e915c84102fea890e)
+        ;
+
+        
+    
+    
+            marker_dd8c37b283ae7a3aad1596f621213c0f.bindTooltip(
+                `<div>
+                     Belozërnyy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2118b0d605fa9685bcbf93b302bb6f9a = L.marker(
+                [44.8347, 38.8772],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_668de6fda1a0265642eea18b47a272ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f55515c1e843b587e04893ce3d9ea39e = $(`<div id="html_f55515c1e843b587e04893ce3d9ea39e" style="width: 100.0%; height: 100.0%;">Novodmitriyevskaya: 23.27°C</div>`)[0];
+                popup_668de6fda1a0265642eea18b47a272ca.setContent(html_f55515c1e843b587e04893ce3d9ea39e);
+            
+        
+
+        marker_2118b0d605fa9685bcbf93b302bb6f9a.bindPopup(popup_668de6fda1a0265642eea18b47a272ca)
+        ;
+
+        
+    
+    
+            marker_2118b0d605fa9685bcbf93b302bb6f9a.bindTooltip(
+                `<div>
+                     Novodmitriyevskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d901ab050311f23c5657fc20b229bbdf = L.marker(
+                [44.88, 39.19],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_2c80fc3bcfd7d74dca43a76f25143ae4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_712ae430844d119210a38ae6a30f785e = $(`<div id="html_712ae430844d119210a38ae6a30f785e" style="width: 100.0%; height: 100.0%;">Adygeysk: 23.9°C</div>`)[0];
+                popup_2c80fc3bcfd7d74dca43a76f25143ae4.setContent(html_712ae430844d119210a38ae6a30f785e);
+            
+        
+
+        marker_d901ab050311f23c5657fc20b229bbdf.bindPopup(popup_2c80fc3bcfd7d74dca43a76f25143ae4)
+        ;
+
+        
+    
+    
+            marker_d901ab050311f23c5657fc20b229bbdf.bindTooltip(
+                `<div>
+                     Adygeysk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_176cc755c5dab8f84e430f35fd67d5ec = L.marker(
+                [44.8661, 39.1867],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_20547e03a7899412b39ecc6b7041679c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bb9231a9f69b73c6d661ce084136ac1 = $(`<div id="html_4bb9231a9f69b73c6d661ce084136ac1" style="width: 100.0%; height: 100.0%;">Kochkin: 23.9°C</div>`)[0];
+                popup_20547e03a7899412b39ecc6b7041679c.setContent(html_4bb9231a9f69b73c6d661ce084136ac1);
+            
+        
+
+        marker_176cc755c5dab8f84e430f35fd67d5ec.bindPopup(popup_20547e03a7899412b39ecc6b7041679c)
+        ;
+
+        
+    
+    
+            marker_176cc755c5dab8f84e430f35fd67d5ec.bindTooltip(
+                `<div>
+                     Kochkin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e194d5a5843a334be126981d1c720bed = L.marker(
+                [45.0573, 39.3161],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_5d7034764db806b60121ad7653bfc70e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d71fce9a3591877d2cfe364b654c860a = $(`<div id="html_d71fce9a3591877d2cfe364b654c860a" style="width: 100.0%; height: 100.0%;">Starokorsunskaya: 23.96°C</div>`)[0];
+                popup_5d7034764db806b60121ad7653bfc70e.setContent(html_d71fce9a3591877d2cfe364b654c860a);
+            
+        
+
+        marker_e194d5a5843a334be126981d1c720bed.bindPopup(popup_5d7034764db806b60121ad7653bfc70e)
+        ;
+
+        
+    
+    
+            marker_e194d5a5843a334be126981d1c720bed.bindTooltip(
+                `<div>
+                     Starokorsunskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1961db8bc0ca4660bd3f9516634c9ce = L.marker(
+                [45.2213, 38.7377],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_89ad88eca98514f38e36f86baada2399 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4a28bf5d91b6bf8ea3615a01f60586b = $(`<div id="html_b4a28bf5d91b6bf8ea3615a01f60586b" style="width: 100.0%; height: 100.0%;">Vorontsovskaya: 23.39°C</div>`)[0];
+                popup_89ad88eca98514f38e36f86baada2399.setContent(html_b4a28bf5d91b6bf8ea3615a01f60586b);
+            
+        
+
+        marker_d1961db8bc0ca4660bd3f9516634c9ce.bindPopup(popup_89ad88eca98514f38e36f86baada2399)
+        ;
+
+        
+    
+    
+            marker_d1961db8bc0ca4660bd3f9516634c9ce.bindTooltip(
+                `<div>
+                     Vorontsovskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1636283c0208909c0bb5b39f14d65f37 = L.marker(
+                [45.2178, 39.2283],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_86bd2bc3e0110df0e23d4e7529d64027 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37946afc38126313d2e6ba161b2d7e8e = $(`<div id="html_37946afc38126313d2e6ba161b2d7e8e" style="width: 100.0%; height: 100.0%;">Dinskaya: 23.97°C</div>`)[0];
+                popup_86bd2bc3e0110df0e23d4e7529d64027.setContent(html_37946afc38126313d2e6ba161b2d7e8e);
+            
+        
+
+        marker_1636283c0208909c0bb5b39f14d65f37.bindPopup(popup_86bd2bc3e0110df0e23d4e7529d64027)
+        ;
+
+        
+    
+    
+            marker_1636283c0208909c0bb5b39f14d65f37.bindTooltip(
+                `<div>
+                     Dinskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_258c3caea22834f2a95d8e6cbf00518c = L.marker(
+                [45.2778, 38.8436],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_573a57c8517150a7fed745e1637b3373 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0ffe7c73b56c1e30018bcab99f654ae = $(`<div id="html_f0ffe7c73b56c1e30018bcab99f654ae" style="width: 100.0%; height: 100.0%;">Novovelichkovskaya: 23.39°C</div>`)[0];
+                popup_573a57c8517150a7fed745e1637b3373.setContent(html_f0ffe7c73b56c1e30018bcab99f654ae);
+            
+        
+
+        marker_258c3caea22834f2a95d8e6cbf00518c.bindPopup(popup_573a57c8517150a7fed745e1637b3373)
+        ;
+
+        
+    
+    
+            marker_258c3caea22834f2a95d8e6cbf00518c.bindTooltip(
+                `<div>
+                     Novovelichkovskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d48c7ef890259e256927958b7a738b40 = L.marker(
+                [44.8314, 39.2114],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_0efc87572e2542700303cb4f43fbce09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bdeeaea4d46dc8dd65d231e1342cc5b = $(`<div id="html_7bdeeaea4d46dc8dd65d231e1342cc5b" style="width: 100.0%; height: 100.0%;">Psekups: 23.98°C</div>`)[0];
+                popup_0efc87572e2542700303cb4f43fbce09.setContent(html_7bdeeaea4d46dc8dd65d231e1342cc5b);
+            
+        
+
+        marker_d48c7ef890259e256927958b7a738b40.bindPopup(popup_0efc87572e2542700303cb4f43fbce09)
+        ;
+
+        
+    
+    
+            marker_d48c7ef890259e256927958b7a738b40.bindTooltip(
+                `<div>
+                     Psekups
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61de4e6ec6f0478c06eb64263872d836 = L.marker(
+                [44.7681, 38.9739],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_d5d7bcacd6140290d6a0df142d0a5e0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5139dbcdf6e1d357b7aa737c4dc8b077 = $(`<div id="html_5139dbcdf6e1d357b7aa737c4dc8b077" style="width: 100.0%; height: 100.0%;">Kaluzhskaya: 23.74°C</div>`)[0];
+                popup_d5d7bcacd6140290d6a0df142d0a5e0a.setContent(html_5139dbcdf6e1d357b7aa737c4dc8b077);
+            
+        
+
+        marker_61de4e6ec6f0478c06eb64263872d836.bindPopup(popup_d5d7bcacd6140290d6a0df142d0a5e0a)
+        ;
+
+        
+    
+    
+            marker_61de4e6ec6f0478c06eb64263872d836.bindTooltip(
+                `<div>
+                     Kaluzhskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c6a95e30035a05e26090d6cab800528 = L.marker(
+                [54.2781, 37.4558],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_a666e8e8f2e1e07668c4d7e0dafabb41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6546d6cf56e328ccb6b5d98e35bbf377 = $(`<div id="html_6546d6cf56e328ccb6b5d98e35bbf377" style="width: 100.0%; height: 100.0%;">Leninskiy: 18.8°C</div>`)[0];
+                popup_a666e8e8f2e1e07668c4d7e0dafabb41.setContent(html_6546d6cf56e328ccb6b5d98e35bbf377);
+            
+        
+
+        marker_6c6a95e30035a05e26090d6cab800528.bindPopup(popup_a666e8e8f2e1e07668c4d7e0dafabb41)
+        ;
+
+        
+    
+    
+            marker_6c6a95e30035a05e26090d6cab800528.bindTooltip(
+                `<div>
+                     Leninskiy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e3dd5e45a9dd664b7cc2e87647191bf = L.marker(
+                [44.7887, 38.8018],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_9a2480c22933b3a77653d9596f69fa76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fdfcbdec54a12992d0ecac3fa6bda1b = $(`<div id="html_4fdfcbdec54a12992d0ecac3fa6bda1b" style="width: 100.0%; height: 100.0%;">Smolenskaya: 23.2°C</div>`)[0];
+                popup_9a2480c22933b3a77653d9596f69fa76.setContent(html_4fdfcbdec54a12992d0ecac3fa6bda1b);
+            
+        
+
+        marker_2e3dd5e45a9dd664b7cc2e87647191bf.bindPopup(popup_9a2480c22933b3a77653d9596f69fa76)
+        ;
+
+        
+    
+    
+            marker_2e3dd5e45a9dd664b7cc2e87647191bf.bindTooltip(
+                `<div>
+                     Smolenskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43ec427832e9eb6bb024e848729fb8b2 = L.marker(
+                [44.8541, 38.6769],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_8da191f8ae518e197aee80324a164ff2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2326561cf5cb15f085bf91252eb2367e = $(`<div id="html_2326561cf5cb15f085bf91252eb2367e" style="width: 100.0%; height: 100.0%;">Severskaya: 23.18°C</div>`)[0];
+                popup_8da191f8ae518e197aee80324a164ff2.setContent(html_2326561cf5cb15f085bf91252eb2367e);
+            
+        
+
+        marker_43ec427832e9eb6bb024e848729fb8b2.bindPopup(popup_8da191f8ae518e197aee80324a164ff2)
+        ;
+
+        
+    
+    
+            marker_43ec427832e9eb6bb024e848729fb8b2.bindTooltip(
+                `<div>
+                     Severskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26aef1a125d5680d05fbd891fbbb7b83 = L.marker(
+                [44.8022, 39.2372],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_437098a45bdb979c2550c016266071b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7182be96e4c72a7e00261697056032f6 = $(`<div id="html_7182be96e4c72a7e00261697056032f6" style="width: 100.0%; height: 100.0%;">Mol’kin: 23.95°C</div>`)[0];
+                popup_437098a45bdb979c2550c016266071b3.setContent(html_7182be96e4c72a7e00261697056032f6);
+            
+        
+
+        marker_26aef1a125d5680d05fbd891fbbb7b83.bindPopup(popup_437098a45bdb979c2550c016266071b3)
+        ;
+
+        
+    
+    
+            marker_26aef1a125d5680d05fbd891fbbb7b83.bindTooltip(
+                `<div>
+                     Mol’kin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e560c82cca73fca583c6e8e8f807ede3 = L.marker(
+                [45.3433, 39.0761],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_e9ed295fce91836f4b0dde90b1406d7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0985fa5afecc26140a83e283ea59dd5 = $(`<div id="html_c0985fa5afecc26140a83e283ea59dd5" style="width: 100.0%; height: 100.0%;">Staromyshastovskaya: 23.35°C</div>`)[0];
+                popup_e9ed295fce91836f4b0dde90b1406d7d.setContent(html_c0985fa5afecc26140a83e283ea59dd5);
+            
+        
+
+        marker_e560c82cca73fca583c6e8e8f807ede3.bindPopup(popup_e9ed295fce91836f4b0dde90b1406d7d)
+        ;
+
+        
+    
+    
+            marker_e560c82cca73fca583c6e8e8f807ede3.bindTooltip(
+                `<div>
+                     Staromyshastovskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15c54fb76b9d361f29a44c75bcc1d865 = L.marker(
+                [45.1991, 38.5827],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_47bf9e8c5efa70d1ecd3567a8d7dd875 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e542acd3a7578ba2a77a28899f6912b = $(`<div id="html_6e542acd3a7578ba2a77a28899f6912b" style="width: 100.0%; height: 100.0%;">Novomyshastovskaya: 23.43°C</div>`)[0];
+                popup_47bf9e8c5efa70d1ecd3567a8d7dd875.setContent(html_6e542acd3a7578ba2a77a28899f6912b);
+            
+        
+
+        marker_15c54fb76b9d361f29a44c75bcc1d865.bindPopup(popup_47bf9e8c5efa70d1ecd3567a8d7dd875)
+        ;
+
+        
+    
+    
+            marker_15c54fb76b9d361f29a44c75bcc1d865.bindTooltip(
+                `<div>
+                     Novomyshastovskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1512439cf541997ae00ce6aa9ba1616a = L.marker(
+                [44.8876, 39.3855],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_8ea32a397b8b00b397b17d8b074f3585 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50222d8e7915d01bbe387fa1812d8128 = $(`<div id="html_50222d8e7915d01bbe387fa1812d8128" style="width: 100.0%; height: 100.0%;">Ponezhukay: 23.94°C</div>`)[0];
+                popup_8ea32a397b8b00b397b17d8b074f3585.setContent(html_50222d8e7915d01bbe387fa1812d8128);
+            
+        
+
+        marker_1512439cf541997ae00ce6aa9ba1616a.bindPopup(popup_8ea32a397b8b00b397b17d8b074f3585)
+        ;
+
+        
+    
+    
+            marker_1512439cf541997ae00ce6aa9ba1616a.bindTooltip(
+                `<div>
+                     Ponezhukay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb58f2f9255c4b269fbd793c97cb6270 = L.marker(
+                [45.1181, 39.424],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_a73e99bd9602d417fa5e4b6e7dedc5d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c29f7131e091075adedcdc9ed95fe7ab = $(`<div id="html_c29f7131e091075adedcdc9ed95fe7ab" style="width: 100.0%; height: 100.0%;">Vasyurinskaya: 23.94°C</div>`)[0];
+                popup_a73e99bd9602d417fa5e4b6e7dedc5d7.setContent(html_c29f7131e091075adedcdc9ed95fe7ab);
+            
+        
+
+        marker_eb58f2f9255c4b269fbd793c97cb6270.bindPopup(popup_a73e99bd9602d417fa5e4b6e7dedc5d7)
+        ;
+
+        
+    
+    
+            marker_eb58f2f9255c4b269fbd793c97cb6270.bindTooltip(
+                `<div>
+                     Vasyurinskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bc77add1310dde9e8fd239894439974 = L.marker(
+                [45.2939, 39.2669],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_77ae683fe86fb614de565b0f443b24e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e757b0b74aa27c6ba187d421c866d03c = $(`<div id="html_e757b0b74aa27c6ba187d421c866d03c" style="width: 100.0%; height: 100.0%;">Plastunovskaya: 23.94°C</div>`)[0];
+                popup_77ae683fe86fb614de565b0f443b24e5.setContent(html_e757b0b74aa27c6ba187d421c866d03c);
+            
+        
+
+        marker_7bc77add1310dde9e8fd239894439974.bindPopup(popup_77ae683fe86fb614de565b0f443b24e5)
+        ;
+
+        
+    
+    
+            marker_7bc77add1310dde9e8fd239894439974.bindTooltip(
+                `<div>
+                     Plastunovskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12ca3f42da51c7c26291394ce7182af8 = L.marker(
+                [45.3492, 38.7715],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_ff3c8488d02816b3e868b1b2fc9ce08e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_575778794400a4b156fb244bc75a1f67 = $(`<div id="html_575778794400a4b156fb244bc75a1f67" style="width: 100.0%; height: 100.0%;">Boykoponura: 23.42°C</div>`)[0];
+                popup_ff3c8488d02816b3e868b1b2fc9ce08e.setContent(html_575778794400a4b156fb244bc75a1f67);
+            
+        
+
+        marker_12ca3f42da51c7c26291394ce7182af8.bindPopup(popup_ff3c8488d02816b3e868b1b2fc9ce08e)
+        ;
+
+        
+    
+    
+            marker_12ca3f42da51c7c26291394ce7182af8.bindTooltip(
+                `<div>
+                     Boykoponura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0695b10aba88a396f0eccc40dc3390c = L.marker(
+                [44.7908, 38.6264],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_77ffebb0b37bda42f583b32df328e8fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d6d3b54a3d33082bb2b98ee1e53f26d = $(`<div id="html_6d6d3b54a3d33082bb2b98ee1e53f26d" style="width: 100.0%; height: 100.0%;">Azovskaya: 23.08°C</div>`)[0];
+                popup_77ffebb0b37bda42f583b32df328e8fc.setContent(html_6d6d3b54a3d33082bb2b98ee1e53f26d);
+            
+        
+
+        marker_c0695b10aba88a396f0eccc40dc3390c.bindPopup(popup_77ffebb0b37bda42f583b32df328e8fc)
+        ;
+
+        
+    
+    
+            marker_c0695b10aba88a396f0eccc40dc3390c.bindTooltip(
+                `<div>
+                     Azovskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_317b9b102764b966c544ae74585045c9 = L.marker(
+                [44.8422, 38.5669],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_930b86506544273df3feafb1f6320312 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c60b42f9b8f3f4e4ecc7c3070f62fee = $(`<div id="html_9c60b42f9b8f3f4e4ecc7c3070f62fee" style="width: 100.0%; height: 100.0%;">Il'skiy: 23.02°C</div>`)[0];
+                popup_930b86506544273df3feafb1f6320312.setContent(html_9c60b42f9b8f3f4e4ecc7c3070f62fee);
+            
+        
+
+        marker_317b9b102764b966c544ae74585045c9.bindPopup(popup_930b86506544273df3feafb1f6320312)
+        ;
+
+        
+    
+    
+            marker_317b9b102764b966c544ae74585045c9.bindTooltip(
+                `<div>
+                     Il'skiy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_013c676e26b15824a640da9e5468f50a = L.marker(
+                [52.1578, 34.0367],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_308360bbe37a81dd7ca7a3fff0ccedea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1463180cb851bf248c63ecce2352e84 = $(`<div id="html_b1463180cb851bf248c63ecce2352e84" style="width: 100.0%; height: 100.0%;">Sorokin: 16.81°C</div>`)[0];
+                popup_308360bbe37a81dd7ca7a3fff0ccedea.setContent(html_b1463180cb851bf248c63ecce2352e84);
+            
+        
+
+        marker_013c676e26b15824a640da9e5468f50a.bindPopup(popup_308360bbe37a81dd7ca7a3fff0ccedea)
+        ;
+
+        
+    
+    
+            marker_013c676e26b15824a640da9e5468f50a.bindTooltip(
+                `<div>
+                     Sorokin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7effaeb60bca860c4e25c63bdef7287c = L.marker(
+                [45.31, 38.66],
+                {}
+            ).addTo(map_280d448b060955bd85f49ca0b405f02a);
+        
+    
+        var popup_9b5f2eea8757e3371806171c41ee9227 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0583f438a1f47636cb8171326e1ba8f4 = $(`<div id="html_0583f438a1f47636cb8171326e1ba8f4" style="width: 100.0%; height: 100.0%;">Andreyevskaya: 23.45°C</div>`)[0];
+                popup_9b5f2eea8757e3371806171c41ee9227.setContent(html_0583f438a1f47636cb8171326e1ba8f4);
+            
+        
+
+        marker_7effaeb60bca860c4e25c63bdef7287c.bindPopup(popup_9b5f2eea8757e3371806171c41ee9227)
+        ;
+
+        
+    
+    
+            marker_7effaeb60bca860c4e25c63bdef7287c.bindTooltip(
+                `<div>
+                     Andreyevskaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
